@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador</title>
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<header style="padding: 10px; margin-bottom: 5%;">
+    <div style="width: 20%; float: left;">
+        <div style="float: left; ">    
+            <img src="alura.png" alt="AluraLogo" style="display: inline; height: 25%; width: 25%; border-radius: 40px;">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+    <div style="width: 60%; float: left;">
+        <div style="margin: 10px auto; text-align: center;">
+            <p style="display: inline;font-family: arial, Helvetica, sans-serif; font-size: 30px; letter-spacing: 0px; word-spacing: 0px; color: #000000; font-weight: 400; text-decoration: none solid rgb(68, 68, 68); font-style: normal; font-variant: normal; text-transform: none;">
+                Alura Challenge: Encriptador / Desencriptador
+            </p>
+            <div style="clear: both;"></div>
+        </div>
+    </div>
+    <div style="width: 20%; float: left;">
+        <div style="float: right; text-align: right;">
+            <img src="pfp2.png" alt="Pfp" style="display: inline; height: 25%; width: 25%; border-radius: 40px;">
+        </div>
+        <div style="clear: both;"></div>
+    </div>
+</header>
+<body style="background-color: darkslateblue ;">
+    <div style="padding:10px;">
+        <div name="inputField" style="border-radius: 10px ;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 20%; margin: auto; border:1px solid white; padding: 10px; background-color: grey; text-align: center;">
+            <form>
+                <input id = "getThis" class = "userInput" type="text" autofocus placeholder="Texto a procesar" style="display: inline; text-align: center;">            
+            </form>
+            <button onclick="btnen()" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);display:inline; margin-top: 10px;">Encriptar</button>
+            <button onclick="btndesen()" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);display:inline; margin-top: 10px;">Desencriptar</button>
+        </div>
+        <div name="resField" style="border-radius: 10px ;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);width: 30%; margin: auto; border:1px solid white; padding: 10px; margin-top: 10px; background-color: grey;">
+            <div name="resTextField">
+                <p id="resField">
+                    
+                </p>
+                <p id = "deleteMe">
+                    Resultado
+                </p>
+            </div>
+            <div name="resTextButtonDiv" >
+                <button onclick="btncopy()" style="box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);">Copiar</button>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
